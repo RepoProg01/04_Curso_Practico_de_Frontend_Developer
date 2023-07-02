@@ -1,49 +1,38 @@
 <!DOCTYPE html>
-<html lang="es">
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- fonts -->
+    <!-- Fonts Quicksand', sans-serif-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
-    <title>Recover Passoword</title>
+    <link href="http s://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+    <!-- Fonts 'Roboto', sans-serif-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
     <!-- style mobile firts -->
-    <link rel="stylesheet" href="./style_default_mobile.css">
+    <link rel="stylesheet" href="./CSS/mobile.css">
     <!-- media querys -->
-    <link media="screen and (min-width: 600px)" rel="stylesheet" href="./style_tablet.css">
-    <link media="screen and (min-width: 1080px)" rel="stylesheet" href="./style_desktop.css">
+    <link media="screen and (min-width: 640px)" rel="stylesheet" href="./CSS/tablet.css">
+    <link media="screen and (min-width: 1080px)" rel="stylesheet" href="./CSS/desktop.css">
+
+    <title>Login</title>
 </head>
-
 <body>
-    <main>
-        <!-- Crear Nueva Contraseña -->
-        <section>
-            <div class="newPassword">
-                <div class="newPassword__container">
-                    <!-- img -->
-                    <img src="../logos/logo_yard_sale.svg" alt="logo" class="newPassword__logo">
-                    <!-- Titulo y descripcion -->
-                    <h1 class="newPassword__title">Create a new password</h1>
-                    <p class="newPassword__subtitle">Enter a new password for you account</p>
-                    <!-- formulario -->
-                    <form action="#" class="form">
-                        <label for="password" class="form__label">Password</label>
-                        <input type="password" id="password" placeholder="Enter you new password"
-                            class="input form_input--password">
-
-                        <label for="confirmPassword" class="form__label">Confirm Password</label>
-                        <input type="password" id="confirmPassword" placeholder="Confirm  password"
-                            class="input form_input--confirmPassword">
-
-                        <input type="submit" value="Confirm" class="form__button newPassword__button">
-                    </form>
-                </div>
-            </div>
-        </section>
-    </main>
+    <div class="login mainContainer">
+        <div class="login_container container">
+            <img class="login_logo logo" src="./assets/logos/logo1.svg" alt="logo">
+            <form class="login_form form" action="">
+                <label class="login_label label" for="password">Email address</label>
+                <input class="login_input input" id="password" type="email" placeholder="user@.com">
+                <label class="login_label label" for="reEnter">Password</label>
+                <input class="login_input input" id="reEnter" type="password" placeholder="enter your password">
+                <input class="primary_btn login_btn" type="submit" value="Log in">
+                <p class="login_recive recive"><a class="login_span span"href="">Forgot my pasword</a></p>
+                <input class="primary_btn signUp_btn" type="submit" value="Sign up">
+            </form>
+        </div>
+    </div>
 </body>
-
 </html>
