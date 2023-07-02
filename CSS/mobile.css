@@ -39,10 +39,6 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-.login,
-.emailRec,
-.regRec{
     margin-top: 40px;
 }
 /* --------------------------------------------------------- */
@@ -59,7 +55,9 @@ body{
 .login_logo{
     width: 200px;
 }
-.regRec_logo, .emailRec_logo{
+.regRec_logo, 
+.emailRec_logo,
+.forgot_logo{
     width: 150px;
 }
 /* --------------------------------------------------------- */
@@ -93,6 +91,7 @@ body{
     justify-content: center;
     align-items: center;
     justify-self: center;
+    margin-bottom: 30px;
 }
 .emailRec_img{
     width: 90px;
@@ -147,13 +146,6 @@ body{
     background-color: var(--Orange);
     color: var(--Dark-grey);
 }
-.regRec_btn{
-    margin-top: 12px;
-    margin-bottom: 32px;
-}
-.emailRec_btn{
-    margin-top: 30px;
-}
 .signUp_btn{
     background-color: var(--Orange);
     color: var(--White);
@@ -161,7 +153,6 @@ body{
     bottom: 20px;
     width: 340px;
 }
-
 /* --------------------------------------------------------- */
 
 /* @media(max-width:640px){
