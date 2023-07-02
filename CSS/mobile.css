@@ -1,0 +1,174 @@
+/* --------------------------------------------------------- */
+/* Variables */
+:root{
+    /* Colors */
+    --Black: #000000;
+    --Dark-grey: #222831;
+    --Grey: #393E46;
+    --Orange: #F96D00;
+    --Light-grey: #F2F2F2;
+    --White: #ffffff;
+    /* Fonts */
+    --Quicksand:'Quicksand', sans-serif;
+    --Roboto:'Roboto', sans-serif;
+    /* Text size */
+    --sm: 1.4rem;
+    --md: 1.6rem;
+    --lg: 1.8rem;
+    --xl: 2.0rem;
+}
+/* Reset */
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+/* Set rem */
+html{
+    font-size: 62.5%;
+}
+/* Defaults */
+body{
+    font-family: var(--Quicksand);
+    background-color: var(--Dark-grey);
+}
+/* --------------------------------------------------------- */
+.mainContainer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.login{
+    margin-top: 100px;
+}
+.emailRec,
+.regRec{
+    margin-top: 80px;
+}
+/* --------------------------------------------------------- */
+.container{
+    display: grid;
+    grid-template-rows: auto auto 1fr;
+    width: 340px;
+}
+/* --------------------------------------------------------- */
+.logo{
+    margin-bottom: 76px;
+    justify-self: center;
+}
+.login_logo{
+    width: 200px;
+}
+.regRec_logo, .emailRec_logo{
+    width: 150px;
+}
+/* --------------------------------------------------------- */
+.title{
+    font-size: var(--xl);
+    margin-bottom: 12px;
+    text-align: center;
+    color: var(--White);
+}
+/* --------------------------------------------------------- */
+.subtitle{
+    color: var(--White);
+    font-size: var(--xl);
+    font-weight: 300;
+    margin-bottom: 40px;
+    text-align: center;
+}
+/* --------------------------------------------------------- */
+.form{
+    display: flex;
+    flex-direction: column;
+}
+/* --------------------------------------------------------- */
+.emailRec_mail{
+    width: 140px;
+    height: 140px;
+    border: 2px solid var(--Orange);
+    border-radius: 50%;
+    background-color: var(--Dark-grey);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-self: center;
+}
+.emailRec_img{
+    width: 90px;
+}
+/* --------------------------------------------------------- */
+.label{
+    font-family: var(--Roboto);
+    font-size: var(--sm);
+    font-weight: 700;
+    margin-bottom: 8px;
+    color: var(--Orange);
+}
+/* --------------------------------------------------------- */
+.input{
+    background-color: var(--Light-grey);
+    border: none;
+    border-radius: 10px;
+    height: 44px;
+    font-size: var(--md);
+    padding: 14px;
+    margin-bottom: 24px;
+}
+/* --------------------------------------------------------- */
+.recive{
+    color: var(--Orange);
+    font-size: var(--sm);
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 60px;
+}
+.span{
+    color: var(--White);
+    text-decoration: none;
+}
+.span:hover{
+    color: var(--Orange);
+}
+/* --------------------------------------------------------- */
+.primary_btn{
+    border: 2px solid var(--Orange);
+    border-radius: 10px;
+    color: var(--Orange);
+    background-color: var(--Dark-grey);
+    height: 60px;
+    width: 100%;
+    cursor: pointer;
+    font-size: var(--md);
+    font-weight: bold;
+    cursor: pointer;
+}
+.primary_btn:hover{
+    background-color: var(--Orange);
+    color: var(--Dark-grey);
+}
+.regRec_btn{
+    margin-top: 12px;
+    margin-bottom: 32px;
+}
+.emailRec_btn{
+    margin-top: 36px;
+}
+.signUp_btn{
+    background-color: var(--Orange);
+    color: var(--White);
+    position: absolute;
+    bottom: 20px;
+    width: 340px;
+}
+
+/* --------------------------------------------------------- */
+
+/* @media(max-width:640px){
+    .login_logo{
+        display: block;
+    }
+} */
+

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Fonts Quicksand', sans-serif-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="http s://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+    <!-- Fonts 'Roboto', sans-serif-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
+    <!-- style mobile firts -->
+    <link rel="stylesheet" href="./CSS/mobile.css">
+    <!-- media querys -->
+    <link media="screen and (min-width: 640px)" rel="stylesheet" href="./CSS/tablet.css">
+    <link media="screen and (min-width: 1080px)" rel="stylesheet" href="./CSS/desktop.css">
+
+    <title>Register o Recovery</title>
+</head>
+<body>
+    <div class="regRec mainContainer">
+        <div class="regRec_container container">
+            <img class="regRec_logo logo" src="./assets/logos/logo1.svg" alt="logo">
+            <h1 class="regRec_title title">Create a new password</h1>
+            <p class="regRec_subtitle subtitle">Enter a new password for your account</p>
+            <form class="regRec_form form" action="">
+                <label class="regRec_label label" for="password">Password</label>
+                <input class="regRec_input input" id="password" type="password" placeholder="enter new password">
+                <label class="regRec_label label" for="reEnter">Re-enter password</label>
+                <input class="regRec_input input" id="reEnter" type="reEnter" placeholder="confirm password">
+                <input class="primary_btn regRec_btn" type="submit"
+                value="Confirm new password">
+            </form>
+        </div>
+    </div>
+</body>
+</html>

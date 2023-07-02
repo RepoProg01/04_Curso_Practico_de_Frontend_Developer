@@ -1,0 +1,6 @@
+.regRec_logo, .emailRec_logo, .login_logo{
+    display: none;
+}
+.signUp_btn{
+    position: static;
+}
