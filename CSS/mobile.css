@@ -40,12 +40,10 @@ body{
     flex-direction: column;
     align-items: center;
 }
-.login{
-    margin-top: 100px;
-}
+.login,
 .emailRec,
 .regRec{
-    margin-top: 80px;
+    margin-top: 40px;
 }
 /* --------------------------------------------------------- */
 .container{
@@ -55,7 +53,7 @@ body{
 }
 /* --------------------------------------------------------- */
 .logo{
-    margin-bottom: 76px;
+    margin-bottom: 40px;
     justify-self: center;
 }
 .login_logo{
@@ -66,7 +64,7 @@ body{
 }
 /* --------------------------------------------------------- */
 .title{
-    font-size: var(--xl);
+    font-size: var(--lg);
     margin-bottom: 12px;
     text-align: center;
     color: var(--White);
@@ -74,9 +72,9 @@ body{
 /* --------------------------------------------------------- */
 .subtitle{
     color: var(--White);
-    font-size: var(--xl);
+    font-size: var(--lg);
     font-weight: 300;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
     text-align: center;
 }
 /* --------------------------------------------------------- */
@@ -123,7 +121,7 @@ body{
     font-size: var(--sm);
     text-align: center;
     margin-top: 20px;
-    margin-bottom: 60px;
+    margin-bottom: 20px;
 }
 .span{
     color: var(--White);
@@ -154,14 +152,14 @@ body{
     margin-bottom: 32px;
 }
 .emailRec_btn{
-    margin-top: 36px;
+    margin-top: 30px;
 }
 .signUp_btn{
     background-color: var(--Orange);
     color: var(--White);
-    /* position: absolute;
+    position: absolute;
     bottom: 20px;
-    width: 340px; */
+    width: 340px;
 }
 
 /* --------------------------------------------------------- */
