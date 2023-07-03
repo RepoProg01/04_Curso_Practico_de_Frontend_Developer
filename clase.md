@@ -77,9 +77,11 @@ puede usarse directamente en el css :
 ```
 O en diferentes archivos en el head del HTML :
 ```css
- <!-- style mobile firts -->
+    <!-- style mobile firts -->
     <link rel="stylesheet" href="./CSS/mobile.css">
+
     <!-- media querys -->
     <link media="screen and (min-width: 640px)" rel="stylesheet" href="./CSS/tablet.css">
+    
     <link media="screen and (min-width: 1080px)" rel="stylesheet" href="./CSS/desktop.css">
 ```

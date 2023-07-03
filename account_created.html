@@ -17,21 +17,20 @@
     <link media="screen and (min-width: 640px)" rel="stylesheet" href="./CSS/tablet.css">
     <link media="screen and (min-width: 1080px)" rel="stylesheet" href="./CSS/desktop.css">
 
-    <title>Login</title>
+    <title>Account Created</title>
 </head>
 <body>
-    <div class="login mainContainer">
-        <div class="login_container container">
-            <img class="login_logo logo" src="./assets/logos/logo1.svg" alt="logo">
-            <form class="login_form form" action="./account.html">
-                <label class="login_label label" for="email">Email address</label>
-                <input class="login_input input" id="email" type="email" placeholder="user@.com">
-                <label class="login_label label" for="password">Password</label>
-                <input class="login_input input" id="password" type="password" placeholder="enter your password">
-                <input class="primary_btn login_btn" type="submit" value="Log in">
-                <p class="login_recive recive"><a class="login_span span"href="./password_recovery.html">Forgot my pasword</a></p>
-            </form>
-            <a href="./signUp.html"><button class="primary_btn signUp_btn">Sign up</button></a>
+    <div class="created mainContainer">
+        <div class="created_container container">
+            <img class="created_logo logo" src="./assets/logos/logo1.svg" alt="logo">
+            <h1 class="created_title title">The account has been created!</h1>
+            <p class="created_subtitle subtitle">Please go to login to enter to your account</p>
+            
+            <div class="created_mail">
+                <img class="created_img" src="./assets/logos/user.svg" alt="email">
+            </div>
+
+            <a href="./index.html"><button class="primary_btn created_btn">Login</button></a>
         </div>
     </div>
 </body>

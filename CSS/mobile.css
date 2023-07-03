@@ -6,6 +6,7 @@
     --Dark-grey: #222831;
     --Grey: #393E46;
     --Orange: #F96D00;
+    /* --Orange: rgb(249, 109, 0); */
     --Light-grey: #F2F2F2;
     --White: #ffffff;
     /* Fonts */
@@ -72,6 +73,7 @@ body{
 .login_logo{
     width: 200px;
 }
+.created_logo,
 .regRec_logo, 
 .emailRec_logo,
 .forgot_logo{
@@ -101,7 +103,8 @@ body{
     flex-direction: column;
 }
 /* --------------------------------------------------------- */
-.emailRec_mail{
+.emailRec_mail,
+.created_mail{
     width: 140px;
     height: 140px;
     border: 2px solid var(--Orange);
@@ -113,14 +116,15 @@ body{
     justify-self: center;
     margin-bottom: 30px;
 }
-.emailRec_img{
+.emailRec_img,
+.created_img{
     width: 90px;
 }
 /* --------------------------------------------------------- */
 .label{
     font-family: var(--Roboto);
     font-size: var(--md);
-    font-weight: 3;
+    font-weight: 500;
     margin-bottom: 8px;
     color: var(--Orange);
 }
@@ -170,7 +174,7 @@ body{
     background-color: var(--Orange);
     color: var(--White);
     position: absolute;
-    bottom: 0px;
+    bottom: 10px;
     width: 340px;
 }
 /* --------------------------------------------------------- */
