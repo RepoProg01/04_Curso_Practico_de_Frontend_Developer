@@ -1,4 +1,5 @@
-.logo{
+.logo,
+.navContainer{
     display: none;
 }
 .signUp_btn{

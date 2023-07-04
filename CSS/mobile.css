@@ -6,9 +6,10 @@
     --Dark-grey: #222831;
     --Grey: #393E46;
     --Orange: #F96D00;
-    /* --Orange: rgb(249, 109, 0); */
     --Light-grey: #F2F2F2;
     --White: #ffffff;
+    --Green: #066d5c;
+    --Blue: #151446;
     /* Fonts */
     --Quicksand:'Quicksand', sans-serif;
     --Roboto:'Roboto', sans-serif;
@@ -50,6 +51,69 @@ body{
     height: 20px;
     cursor: pointer;
 }
+/* ----- */
+.search{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.unit{
+    width: 100%;
+    display: grid;
+    grid-template-rows: auto auto;
+}
+/* .unit_container{
+    max-width: 620px;
+} */
+.unit_img{
+    width: 100%;
+}
+.unit_info{
+    width: 100%;
+}
+
+
+table{
+    border-collapse: collapse;
+    background-color: var(--White);
+    width: 100%;
+    text-align: left;
+    font-size: 16px;
+    padding: 14px;
+}
+.unit_titulo{
+    text-align: center;
+}
+.titulo1{
+    background-color: var(--Orange);
+    color: var(--White);
+}
+.titulo2{
+    background-color: var(--Green);
+    color: var(--White);
+}
+.titulo3{
+    background-color: var(--Blue);
+    color: var(--White);
+}
+th{
+    width: 60%;
+    border: 1px solid var(--Black);
+    
+    padding: 5px;
+}
+td{
+    color: var(--Orange);
+    width: 40%;
+    padding: 5px;
+    font-weight: 700;
+    border: 1px solid var(--Black);
+    text-align: center;
+}
+
+/* ---------- */
 /* --------------------------------------------------------- */
 .mainContainer {
     width: 100%;
@@ -179,9 +243,5 @@ body{
 }
 /* --------------------------------------------------------- */
 
-/* @media(max-width:640px){
-    .login_logo{
-        display: block;
-    }
-} */
+
 

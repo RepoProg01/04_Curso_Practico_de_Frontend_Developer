@@ -1,6 +1,14 @@
-.logo{
+.logo,
+.navContainer{
     display: none;
 }
 .signUp_btn{
     position: static;
+}
+.unit{
+    grid-template-columns: 50% 50%;
+    max-width: 800px;
+}
+.unit_info{
+    max-width: 800px;
 }
