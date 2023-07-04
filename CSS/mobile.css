@@ -51,31 +51,25 @@ body{
     height: 20px;
     cursor: pointer;
 }
-/* ----- */
-.search{
+/* --------------------------------------------------------- */
+.byNum{
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    
 }
-.unit{
+.byNum_container{
     width: 100%;
     display: grid;
     grid-template-rows: auto auto;
 }
-/* .unit_container{
-    max-width: 620px;
-} */
-.unit_img{
+.img_container_img{
     width: 100%;
 }
-.unit_info{
+.byNum_info{
     width: 100%;
 }
-
-
-table{
+.byNum_table{
     border-collapse: collapse;
     background-color: var(--White);
     width: 100%;
@@ -83,28 +77,28 @@ table{
     font-size: 16px;
     padding: 14px;
 }
-.unit_titulo{
+.byNum_titulo{
     text-align: center;
 }
-.titulo1{
+.byNum_table .titulo1{
     background-color: var(--Orange);
     color: var(--White);
 }
-.titulo2{
+.byNum_table .titulo2{
     background-color: var(--Green);
     color: var(--White);
 }
-.titulo3{
+.byNum_table .titulo3{
     background-color: var(--Blue);
     color: var(--White);
 }
-th{
+.byNum_table th{
     width: 60%;
     border: 1px solid var(--Black);
     
     padding: 5px;
 }
-td{
+.byNum_table td{
     color: var(--Orange);
     width: 40%;
     padding: 5px;
@@ -112,8 +106,6 @@ td{
     border: 1px solid var(--Black);
     text-align: center;
 }
-
-/* ---------- */
 /* --------------------------------------------------------- */
 .mainContainer {
     width: 100%;
@@ -128,6 +120,9 @@ td{
     display: grid;
     grid-template-rows: auto auto 1fr;
     width: 340px;
+}
+.search_container{
+    padding: 10px;
 }
 /* --------------------------------------------------------- */
 .logo{
@@ -166,6 +161,16 @@ td{
     display: flex;
     flex-direction: column;
 }
+.search_form{
+    width: 100%;
+    display: grid;
+    grid-template-rows: repeat(8, auto);
+    align-items: center;
+    margin-bottom: 14px;
+}
+.search_row{
+     grid-template-columns: 70px auto 50px;
+}
 /* --------------------------------------------------------- */
 .emailRec_mail,
 .created_mail{
@@ -192,6 +197,9 @@ td{
     margin-bottom: 8px;
     color: var(--Orange);
 }
+.search_label{
+    margin-bottom: 0px;
+}
 /* --------------------------------------------------------- */
 .input{
     background-color: var(--Light-grey);
@@ -201,6 +209,12 @@ td{
     font-size: var(--md);
     padding: 14px;
     margin-bottom: 24px;
+}
+.search_input{
+    width: 200px;
+    margin-bottom: 0px;
+    justify-self: center;
+    text-align: center;
 }
 /* --------------------------------------------------------- */
 .recive{
@@ -234,6 +248,12 @@ td{
     background-color: var(--Orange);
     color: var(--Dark-grey);
 }
+.search_btn{
+    height: 30px;
+    width: 30px;
+    justify-self:center;
+}
+
 .signUp_btn{
     background-color: var(--Orange);
     color: var(--White);
@@ -242,6 +262,14 @@ td{
     width: 340px;
 }
 /* --------------------------------------------------------- */
-
+select{
+    border-radius: 10px;
+    height: 44px;
+    width: 200px;
+    font-size: var(--md);
+    padding: 12px;
+    justify-self: center;
+    text-align: center;
+}
 
 

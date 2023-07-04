@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+    <title>Search</title>
+    <!-- style mobile firts -->
+    <link rel="stylesheet" href="./CSS/mobile.css">
+    <!-- media querys -->
+    <link media="screen and (min-width: 640px)" rel="stylesheet" href="./CSS/tablet.css">
+    <link media="screen and (min-width: 1080px)" rel="stylesheet" href="./CSS/desktop.css">
+</head>
+
+<body>
+    <section class="navContainer">
+        <nav>
+            <a href="./index.html"><img class="navContainer_menu" src="./assets/logos/menu_ico.svg" alt=""></a>
+        </nav>
+        <div >
+            <img class="navContainer_logo" src="./assets/logos/logo_banner.svg" alt="logo">
+        </div>
+    </section>
+
+    <section class="seach">
+        <div class="search_container">
+            <h1 class="search_title title">Search</h1>
+            <p class="search_subtitle subtitle">By what do you want to search ?</p>
+            
+            <form class="search_form form" action="./menu.html" method="get">
+                
+                <div class="search_form search_row">
+                    <label class="search_label label" for="number">Number</label>
+                    <input name="f_number" class="search_input input" id="number" type="number" placeholder="unit num">
+                    <input class="primary_btn search_btn" type="radio" value="Search">
+                </div>
+
+                <div class="search_form search_row">
+                    <label class="search_label label" for="date">Date</label>
+                    <input name="f_date" class="search_input input" id="date" type="date" placeholder="date">
+                    <input class="primary_btn search_btn" type="radio" value="Search">
+                </div>
+                
+                <div class="search_form search_row">
+                    <label class="search_label label" for="location">Location</label>
+                    <select name="f_location" id="location">
+                        <option value=""></option>
+                        <option value="milenio">Milenio</option>
+                        <option value="bosco">San Juan Bosco</option>
+                        <option value="sfrancisco">San Francisco</option>
+                        <option value="irapuato">Irapuato</option>
+                        <option value="celaya">Celaya</option>
+                        <option value="smiguel">San Miguel</option>
+                    </select>
+                    <input class="primary_btn search_btn" type="radio" value="Search">
+                </div>
+                
+                <div class="search_form search_row">
+                    <label class="search_label label" for="make">Make</label>
+                    <select name="f_make" id="make">
+                        <option value=""></option>
+                        <option value="nissan">Nissan</option>
+                        <option value="fiat">Fiat</option>
+                        <option value="mercedes">Mercedes</option>
+                        <option value="jac">JAC</option>
+                    </select>
+                    <input class="primary_btn search_btn" type="radio" value="Search">
+                </div>
+
+                <div class="search_form search_row">
+                    <label class="search_label label" for="model">Model</label>
+                    <select name="f_model" id="model">
+                        <option value=""></option>
+                        <option value="d21">D21</option>
+                        <option value="d22">D22</option>
+                        <option value="d23">D23</option>
+                        <option value="ducato">Ducato</option>
+                        <option value="splinter">Splinter</option>
+                    </select>
+                    <input name="m_prueba" class="primary_btn search_btn" type="radio" value="Search">
+                </div>
+
+                <div class="search_form search_row">
+                    <label class="search_label label" for="service">Servicio</label>
+                    <select name="f_service" id="service">
+                        <option value=""></option>
+                        <option value="disCint">Dispositivo Cinturon</option>
+                        <option value="disVel">Dispositivo Velocidad</option>
+                        <option value="volante">Forro Volante</option>
+                        <option value="calavera">Calaveras Traseras</option>
+                    </select>
+                    <input name="m_prueba" class="primary_btn search_btn" type="radio" value="Search">
+                </div>
+
+                <div class="search_form search_row">
+                    <label class="search_label label" for="activity">Actividad</label>
+                    <select name="f_activity" id="activity">
+                        <option value=""></option>
+                        <option value="instalacion">Instalacion</option>
+                        <option value="reparacion">Reparacion</option>
+                    </select>
+                    <input name="m_prueba" class="primary_btn search_btn" type="radio" value="Search">
+                </div>
+
+                <input class="primary_btn search_botton" type="submit" value="Search">
+
+            </form>
+        </div>
+    </section>
+</body>
+
+</html>
