@@ -6,6 +6,7 @@
     --Dark-grey: #222831;
     --Grey: #393E46;
     --Orange: #F96D00;
+    --Orange: rgb(249, 109, 0);
     --Light-grey: #F2F2F2;
     --White: #ffffff;
     --Green: #066d5c;
@@ -121,7 +122,7 @@ body{
     grid-template-rows: auto auto 1fr;
     width: 340px;
 }
-.search_container{
+.register_container{
     padding: 10px;
 }
 /* --------------------------------------------------------- */
@@ -161,15 +162,19 @@ body{
     display: flex;
     flex-direction: column;
 }
-.search_form{
+/* .register_form{
     width: 100%;
     display: grid;
     grid-template-rows: repeat(8, auto);
     align-items: center;
     margin-bottom: 14px;
-}
-.search_row{
-     grid-template-columns: 70px auto 50px;
+} */
+.register_row{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    align-items: center;
+    margin-bottom: 14px;
 }
 /* --------------------------------------------------------- */
 .emailRec_mail,
@@ -197,8 +202,8 @@ body{
     margin-bottom: 8px;
     color: var(--Orange);
 }
-.search_label{
-    margin-bottom: 0px;
+.register_label{
+    margin: 0px 0px 0px 20px;
 }
 /* --------------------------------------------------------- */
 .input{
@@ -210,7 +215,7 @@ body{
     padding: 14px;
     margin-bottom: 24px;
 }
-.search_input{
+.register_input{
     width: 200px;
     margin-bottom: 0px;
     justify-self: center;
@@ -248,12 +253,6 @@ body{
     background-color: var(--Orange);
     color: var(--Dark-grey);
 }
-.search_btn{
-    height: 30px;
-    width: 30px;
-    justify-self:center;
-}
-
 .signUp_btn{
     background-color: var(--Orange);
     color: var(--White);
@@ -271,5 +270,36 @@ select{
     justify-self: center;
     text-align: center;
 }
+.nav_btns{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+.back_btn{
+    width: 100px;
+    height: 100px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    cursor: pointer;
+}
+.s_btn{
+    background-image: url(../assets/logos/btn_search_up.svg);
+}
+.a_btn{
+    background-image: url(../assets/logos/btn_add_up.svg);
+}
+.d_btn{
+    background-image: url(../assets/logos/btn_delete_up.svg);
+}
 
+.s_btn:hover{
+    background-image: url(../assets/logos/btn_search_over.svg);
+}
+.a_btn:hover{
+    background-image: url(../assets/logos/btn_add_over.svg);
+}
+.d_btn:hover{
+    background-image: url(../assets/logos/btn_delete_over.svg);
+}
 
