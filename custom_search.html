@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
-    <title>Register</title>
+    <title>Custom search</title>
     <!-- style mobile firts -->
     <link rel="stylesheet" href="./CSS/mobile.css">
     <!-- media querys -->
@@ -17,34 +17,33 @@
 </head>
 
 <body>
-    <!-- <section class="navContainer">
-        <nav>
-            <a href="./index.html"><img class="navContainer_menu" src="./assets/logos/menu_ico.svg" alt=""></a>
-        </nav>
-        <div >
+
+    <section class="perfil">
+        <div class="perfil_info" >
             <img class="navContainer_logo" src="./assets/logos/logo_banner.svg" alt="logo">
         </div>
-    </section> -->
+        <a href="./index.html"><img src="./assets/logos/btn_exit_up.svg" alt="exit_ico"></a>
+    </section>
 
-    <section class="register">
-        <div class="register_container">
-            <h1 class="register_title title">Agregar Registro</h1>
-            <!-- <p class="search_subtitle subtitle">By what do you want to search ?</p> -->
+    <section class="container">
+        <div class="">
+            <h1 class="register_title title">Busqueda personalizada</h1>
+            <!-- <p class="search_subtitle subtitle">Ingrese opciones a buscar</p> -->
             
             <form class="register_form form" action="./menu.html" method="get">
                 
                 <div class="register_row">
-                    <label class="register_label label" for="number">Numero</label>
-                    <input name="f_number" class="register_input input" id="number" type="number" placeholder="unit num">
+                    <label class="mainContainer_label mainContainer_label-custom" for="number">Numero</label>
+                    <input name="f_number" class="mainContainer_input mainContainer_input-custom" id="number" type="number" placeholder="unit num">
                 </div>
 
                 <div class="register_row">
-                    <label class="register_label label" for="date">Fecha</label>
-                    <input name="f_date" class="register_input input" id="date" type="date" placeholder="date">
+                    <label class="mainContainer_label mainContainer_label-custom" for="date">Fecha</label>
+                    <input name="f_date" class="mainContainer_input register_input" id="date" type="date" placeholder="date">
                 </div>
                 
                 <div class="register_row">
-                    <label class="register_label label" for="location">Sucursal</label>
+                    <label class="mainContainer_label mainContainer_label-custom" for="location">Sucursal</label>
                     <select name="f_location" id="location">
                         <option value=""></option>
                         <option value="milenio">Milenio</option>
@@ -57,7 +56,7 @@
                 </div>
                 
                 <div class="register_row">
-                    <label class="register_label label" for="make">Marca</label>
+                    <label class="mainContainer_label mainContainer_label-custom" for="make">Marca</label>
                     <select name="f_make" id="make">
                         <option value=""></option>
                         <option value="nissan">Nissan</option>
@@ -68,7 +67,7 @@
                 </div>
 
                 <div class="register_row">
-                    <label class="register_label label" for="model">Modelo</label>
+                    <label class="mainContainer_label mainContainer_label-custom" for="model">Modelo</label>
                     <select name="f_model" id="model">
                         <option value=""></option>
                         <option value="d21">D21</option>
@@ -80,7 +79,7 @@
                 </div>
 
                 <div class="register_row">
-                    <label class="register_label label" for="service">Servicio</label>
+                    <label class="mainContainer_label mainContainer_label-custom" for="service">Servicio</label>
                     <select name="f_service" id="service">
                         <option value=""></option>
                         <option value="disCint">Dispositivo Cinturon</option>
@@ -91,7 +90,7 @@
                 </div>
 
                 <div class="register_row">
-                    <label class="register_label label" for="activity">Actividad</label>
+                    <label class="mainContainer_label mainContainer_label-custom" for="activity">Actividad</label>
                     <select name="f_activity" id="activity">
                         <option value=""></option>
                         <option value="instalacion">Instalacion</option>
@@ -99,7 +98,7 @@
                     </select>
                 </div>
 
-                <input class="primary_btn register_botton" type="submit" value="Agregar">
+                <input class="primary_btn register_botton" type="submit" value="Buscar">
 
             </form>
         </div>

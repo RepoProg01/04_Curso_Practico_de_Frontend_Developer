@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+    <title>Search by number</title>
+    <!-- style mobile firts -->
+    <link rel="stylesheet" href="./CSS/mobile.css">
+    <!-- media querys -->
+    <link media="screen and (min-width: 640px)" rel="stylesheet" href="./CSS/tablet.css">
+    <link media="screen and (min-width: 1080px)" rel="stylesheet" href="./CSS/desktop.css">
+</head>
+
+<body>
+    <section class="perfil">
+        <div class="perfil_info" >
+            <img class="navContainer_logo" src="./assets/logos/logo_banner.svg" alt="logo">
+        </div>
+        <a href="./index.html"><img src="./assets/logos/btn_exit_up.svg" alt="exit_ico"></a>
+    </section>
+
+    <section class="container">
+        <div class="container_sec container_sec-searchByNum">
+            <h1 class="container_text container_text-title">Busqueda por numero</h1>
+            <p class="container_text container_text-subtitle">Introduce el numero de unidad que deseas buscar?</p>
+            
+            <form class="container_form" action="./by_number.html" method="get">
+                
+                <div class="container_row container_row-searchByNum">
+                    <label class="container_label container_label-searchByNum" for="number">Numero</label>
+                    <input name="f_number" class="container_input container_input-searchByNum" id="number" type="number" placeholder="" required>
+                </div>
+
+                <input class="primary_btn" type="submit" value="Buscar">
+
+            </form>
+        </div>
+    </section>
+</body>
+
+</html>

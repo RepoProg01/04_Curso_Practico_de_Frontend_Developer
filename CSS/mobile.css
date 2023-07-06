@@ -7,6 +7,7 @@
     --Grey: #393E46;
     --Orange: #F96D00;
     --Orange: rgb(249, 109, 0);
+ 
     --Light-grey: #F2F2F2;
     --White: #ffffff;
     --Green: #066d5c;
@@ -35,6 +36,236 @@ body{
     font-family: var(--Quicksand);
     background-color: var(--Dark-grey);
 }
+/* --------------------------------------------------------- */
+/* --------------------------------------------------------- */
+/* -------------------------Contenedor---------------------- */
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 28px;
+}
+/* -----------------------Contenedor Sec-------------------- */
+.container_sec{
+    display: grid;
+    grid-template-rows: auto auto 1fr;
+    width: 340px;
+}
+.container_sec-searchByNum{
+    grid-template-rows: repeat(3, auto); 
+}
+.container_sec-accountCreate,
+.container_sec-passRec{
+    grid-template-rows: repeat(5, auto); 
+}
+.container_sec-emailSend{
+    grid-template-rows: repeat(6, auto); 
+}
+.container_sec-signup{
+    grid-template-rows: repeat(4, auto); 
+}
+/* ---------------------Titulo Subtitulo-------------------- */
+.container_text{
+    text-align: center;
+}
+.container_text-title{
+    font-size: var(--xl);
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: var(--Orange);
+}
+.container_text-subtitle{
+    font-size: var(--lg);
+    font-weight: 500;
+    margin-bottom: 20px;
+    color: var(--White);
+}
+/* ---------------------Mediun / Big Logo------------------- */
+.container_logo{
+    margin-bottom: 28px;
+    justify-self: center;
+}
+.container_logo-big{
+    width: 200px;
+}
+.regRec_logo, 
+.container_logo-medium{
+    width: 150px;
+}
+/* ---------------------------Form-------------------------- */
+.container_form{
+    display: flex;
+    flex-direction: column;
+}
+.container_row{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    align-items: center;
+}
+.container_row-searchByNum{
+    margin-bottom: 30px;
+}
+/* ---------------------------Label-------------------------- */
+.container_label{
+    font-family: var(--Roboto);
+    font-size: var(--md);
+    font-weight: 500;
+    margin-bottom: 8px;
+    color: var(--Orange);
+}
+.mainContainer_label-custom{
+    margin: 0px 0px 0px 20px;
+}
+.container_label-searchByNum{
+    margin-bottom: 0px;
+}
+/* ----------------------Large inputs------------------------ */
+.container_input{
+    background-color: var(--Light-grey);
+    border: none;
+    border-radius: 10px;
+    height: 44px;
+    font-size: var(--md);
+    padding: 14px;
+    margin-bottom: 24px;
+}
+.container_input-searchByNum{
+    margin-bottom: 0px;
+    text-align: center;
+}
+/* -------------------------Large Buttons-------------------- */
+.primary_btn{
+    border: 2px solid var(--Orange);
+    border-radius: 10px;
+    color: var(--Orange);
+    background-color: var(--Dark-grey);
+    height: 60px;
+    width: 100%;
+    cursor: pointer;
+    font-size: var(--md);
+    font-weight: bold;
+    cursor: pointer;
+}
+.primary_btn:hover{
+    background-color: var(--Orange);
+    color: var(--Dark-grey);
+}
+.primary_btn-signup{
+    background-color: var(--Orange);
+    color: var(--White);
+    position: absolute;
+    bottom: 10px;
+    width: 340px;
+}
+/* ----------------------small text span--------------------- */
+.container_message{
+    color: var(--Orange);
+    font-size: var(--sm);
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.container_span{
+    color: var(--White);
+    text-decoration: none;
+}
+.container_span:hover{
+    color: var(--Orange);
+}
+/* ----------------------------Perfil----------------------- */
+.cont{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 340px;
+}
+.perfil{
+    display: grid;
+    grid-template-columns: auto 80px;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+    background-color: var(--Grey);
+}
+.perfil_info{
+    display: flex;
+    gap: 20px;
+    margin-left: 20px;
+    align-items: center;
+}
+.perfil img{
+    width: 50px;
+    height: 50px;
+}
+.perfil_info img{
+    border-radius: 10px;
+}
+.perfil_text{
+    color: var(--White);
+}
+.perfil_text h1{
+    font-size: 1.6rem;
+}
+.perfil_text span{
+    font-size: 1.4rem;
+}
+.perfil a{
+    cursor: pointer;
+    justify-self: center;
+}
+/* ----------------------------Menu------------------------ */
+
+.menu_container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,140px);
+    gap: 20px;
+    margin-top: 20px;
+    justify-content: center;
+}
+.menu_btn{
+    width: 140px;
+    height: 140px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    cursor: pointer;
+}
+.s_btn{
+    background-image: url(../assets/logos/btn_search_up.svg);
+}
+.c_btn{
+    background-image: url(../assets/logos/btn_custom_up.svg);
+}
+.a_btn{
+    background-image: url(../assets/logos/btn_add_up.svg);
+}
+.e_btn{
+    background-image: url(../assets/logos/btn_edit_up.svg);
+}
+.d_btn{
+    background-image: url(../assets/logos/btn_delete_up.svg);
+}
+.i_btn{
+    background-image: url(../assets/logos/btn_info_up.svg);
+}
+
+
+/* .s_btn:hover{
+    background-image: url();
+}
+.a_btn:hover{
+    background-image: url();
+}
+.d_btn:hover{
+    background-image: url();
+} */
 /* --------------------------------------------------------- */
 .navContainer{
     width: 100%;
@@ -107,78 +338,8 @@ body{
     border: 1px solid var(--Black);
     text-align: center;
 }
-/* --------------------------------------------------------- */
-.mainContainer {
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 28px;
-}
-/* --------------------------------------------------------- */
-.container{
-    display: grid;
-    grid-template-rows: auto auto 1fr;
-    width: 340px;
-}
-.register_container{
-    padding: 10px;
-}
-/* --------------------------------------------------------- */
-.logo{
-    margin-bottom: 28px;
-    justify-self: center;
-}
-.login_logo{
-    width: 200px;
-}
-.created_logo,
-.regRec_logo, 
-.emailRec_logo,
-.forgot_logo{
-    width: 150px;
-}
-/* --------------------------------------------------------- */
-.title{
-    font-size: var(--xl);
-    margin-bottom: 12px;
-    text-align: center;
-    color: var(--Orange);
-}
-/* --------------------------------------------------------- */
-.subtitle{
-    color: var(--White);
-    font-size: var(--lg);
-    font-weight: 300;
-    margin-bottom: 30px;
-    text-align: center;
-}
-.sign_subtitle{
-    margin-bottom: 10px;
-}
-/* --------------------------------------------------------- */
-.form{
-    display: flex;
-    flex-direction: column;
-}
-/* .register_form{
-    width: 100%;
-    display: grid;
-    grid-template-rows: repeat(8, auto);
-    align-items: center;
-    margin-bottom: 14px;
-} */
-.register_row{
-    width: 100%;
-    display: grid;
-    grid-template-columns: 30% 70%;
-    align-items: center;
-    margin-bottom: 14px;
-}
-/* --------------------------------------------------------- */
-.emailRec_mail,
-.created_mail{
+/* ---------------------Segunda imagen---------------------- */
+.container_subimg{
     width: 140px;
     height: 140px;
     border: 2px solid var(--Orange);
@@ -190,77 +351,13 @@ body{
     justify-self: center;
     margin-bottom: 30px;
 }
-.emailRec_img,
-.created_img{
+.container_img{
     width: 90px;
 }
 /* --------------------------------------------------------- */
-.label{
-    font-family: var(--Roboto);
-    font-size: var(--md);
-    font-weight: 500;
-    margin-bottom: 8px;
-    color: var(--Orange);
-}
-.register_label{
-    margin: 0px 0px 0px 20px;
-}
-/* --------------------------------------------------------- */
-.input{
-    background-color: var(--Light-grey);
-    border: none;
-    border-radius: 10px;
-    height: 44px;
-    font-size: var(--md);
-    padding: 14px;
-    margin-bottom: 24px;
-}
-.register_input{
-    width: 200px;
-    margin-bottom: 0px;
-    justify-self: center;
-    text-align: center;
-}
-/* --------------------------------------------------------- */
-.recive{
-    color: var(--Orange);
-    font-size: var(--sm);
-    text-align: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-.span{
-    color: var(--White);
-    text-decoration: none;
-}
-.span:hover{
-    color: var(--Orange);
-}
-/* --------------------------------------------------------- */
-.primary_btn{
-    border: 2px solid var(--Orange);
-    border-radius: 10px;
-    color: var(--Orange);
-    background-color: var(--Dark-grey);
-    height: 60px;
-    width: 100%;
-    cursor: pointer;
-    font-size: var(--md);
-    font-weight: bold;
-    cursor: pointer;
-}
-.primary_btn:hover{
-    background-color: var(--Orange);
-    color: var(--Dark-grey);
-}
-.signUp_btn{
-    background-color: var(--Orange);
-    color: var(--White);
-    position: absolute;
-    bottom: 10px;
-    width: 340px;
-}
-/* --------------------------------------------------------- */
+
+
+
 select{
     border-radius: 10px;
     height: 44px;
@@ -270,36 +367,6 @@ select{
     justify-self: center;
     text-align: center;
 }
-.nav_btns{
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    margin-top: 20px;
-}
-.back_btn{
-    width: 100px;
-    height: 100px;
-    background-repeat: no-repeat;
-    background-size: contain;
-    cursor: pointer;
-}
-.s_btn{
-    background-image: url(../assets/logos/btn_search_up.svg);
-}
-.a_btn{
-    background-image: url(../assets/logos/btn_add_up.svg);
-}
-.d_btn{
-    background-image: url(../assets/logos/btn_delete_up.svg);
-}
 
-.s_btn:hover{
-    background-image: url(../assets/logos/btn_search_over.svg);
-}
-.a_btn:hover{
-    background-image: url(../assets/logos/btn_add_over.svg);
-}
-.d_btn:hover{
-    background-image: url(../assets/logos/btn_delete_over.svg);
-}
+
 
