@@ -85,3 +85,42 @@ O en diferentes archivos en el head del HTML :
     
     <link media="screen and (min-width: 1080px)" rel="stylesheet" href="./CSS/desktop.css">
 ```
+Notas varias:
+
+## required
+Si no se llena esa ventana no se puede continuar
+```html
+    <div class="container_row container_row-customSearch">
+        <label class="container_label container_label-searchByNum" for="number">Numero</label>
+        <input name="f_number" class="container_input container_input-searchByNum" id="number" type="number" placeholder="unit num" required>
+    </div>
+```
+## list-style y text-decoration
+```css
+    .ul{
+        list-style: none;
+    }
+    .li{
+        text-decoration: none;
+    }
+```
+## Grid
+Diferentes valores para la linea grid-template-columns o rows
+```css
+.container{
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr auto;
+    grid-template-columns: repeat(auto-fill,140px);
+}
+```
+## place-content: center
+Centra en horizontal y vertical 
+```css
+.container{
+    display: grid;
+place-content: center;
+}
+```
