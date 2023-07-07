@@ -12,3 +12,12 @@
 .byNum_info{
     max-width: 800px;
 }
+.btnContainer_subContainer{
+    width: 500px;
+}
+.perfilOff{
+    display: grid;
+}
+.primary_btn-signup{
+    position: static;
+}

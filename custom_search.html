@@ -17,33 +17,35 @@
 </head>
 
 <body>
-
     <section class="perfil">
         <div class="perfil_info" >
-            <img class="navContainer_logo" src="./assets/logos/logo_banner.svg" alt="logo">
+            <img class="perfil_logo" src="./assets/logos/logo_banner.svg" alt="logo">
         </div>
-        <a href="./index.html"><img src="./assets/logos/btn_exit_up.svg" alt="exit_ico"></a>
+        <div class="perfil_smallIcon">
+            <a  href="./menu.html"><img class="perfil_icon" src="./assets/logos/btn_home_up.svg" alt="exit_ico"></a>
+            <a  href="./index.html"><img class="perfil_icon" src="./assets/logos/btn_exit_up.svg" alt="exit_ico"></a>
+        </div>
     </section>
 
     <section class="container">
-        <div class="">
-            <h1 class="register_title title">Busqueda personalizada</h1>
-            <!-- <p class="search_subtitle subtitle">Ingrese opciones a buscar</p> -->
+        <div class="container_sec container_sec-searchByNum">
+            <h1 class="container_text container_text-title">Busqueda personalizada</h1>
+            <!-- <p class="container_text container_text-subtitle">Ingrese opciones a buscar</p> -->
             
-            <form class="register_form form" action="./menu.html" method="get">
+            <form class="container_form" action="./by_number.html" method="get">
                 
-                <div class="register_row">
-                    <label class="mainContainer_label mainContainer_label-custom" for="number">Numero</label>
-                    <input name="f_number" class="mainContainer_input mainContainer_input-custom" id="number" type="number" placeholder="unit num">
+                <div class="container_row container_row-customSearch">
+                    <label class="container_label container_label-searchByNum" for="number">Numero</label>
+                    <input name="f_number" class="container_input container_input-searchByNum" id="number" type="number" placeholder="unit num">
                 </div>
 
-                <div class="register_row">
-                    <label class="mainContainer_label mainContainer_label-custom" for="date">Fecha</label>
-                    <input name="f_date" class="mainContainer_input register_input" id="date" type="date" placeholder="date">
+                <div class="container_row container_row-customSearch">
+                    <label class="container_label container_label-searchByNum" for="date">Fecha</label>
+                    <input name="f_date" class="container_input container_input-searchByNum" id="date" type="date" placeholder="date">
                 </div>
                 
-                <div class="register_row">
-                    <label class="mainContainer_label mainContainer_label-custom" for="location">Sucursal</label>
+                <div class="container_row container_row-customSearch">
+                    <label class="container_label container_label-searchByNum" for="location">Sucursal</label>
                     <select name="f_location" id="location">
                         <option value=""></option>
                         <option value="milenio">Milenio</option>
@@ -55,8 +57,8 @@
                     </select>
                 </div>
                 
-                <div class="register_row">
-                    <label class="mainContainer_label mainContainer_label-custom" for="make">Marca</label>
+                <div class="container_row container_row-customSearch">
+                    <label class="container_label container_label-searchByNum" for="make">Marca</label>
                     <select name="f_make" id="make">
                         <option value=""></option>
                         <option value="nissan">Nissan</option>
@@ -66,8 +68,8 @@
                     </select>
                 </div>
 
-                <div class="register_row">
-                    <label class="mainContainer_label mainContainer_label-custom" for="model">Modelo</label>
+                <div class="container_row container_row-customSearch">
+                    <label class="container_label container_label-searchByNum" for="model">Modelo</label>
                     <select name="f_model" id="model">
                         <option value=""></option>
                         <option value="d21">D21</option>
@@ -78,19 +80,20 @@
                     </select>
                 </div>
 
-                <div class="register_row">
-                    <label class="mainContainer_label mainContainer_label-custom" for="service">Servicio</label>
+                <div class="container_row container_row-customSearch">
+                    <label class="container_label container_label-searchByNum" for="service">Servicio</label>
                     <select name="f_service" id="service">
                         <option value=""></option>
-                        <option value="disCint">Dispositivo Cinturon</option>
-                        <option value="disVel">Dispositivo Velocidad</option>
-                        <option value="volante">Forro Volante</option>
-                        <option value="calavera">Calaveras Traseras</option>
+                        <option value="disCint">Dispositivo cinturon</option>
+                        <option value="disVel">Dispositivo velocidad</option>
+                        <option value="camRev">Camara de reversa</option>
+                        <option value="volante">Forro de volante</option>
+                        <option value="calavera">Calaveras traseras</option>
                     </select>
                 </div>
 
-                <div class="register_row">
-                    <label class="mainContainer_label mainContainer_label-custom" for="activity">Actividad</label>
+                <div class="container_row container_row-customSearch">
+                    <label class="container_label container_label-searchByNum" for="activity">Actividad</label>
                     <select name="f_activity" id="activity">
                         <option value=""></option>
                         <option value="instalacion">Instalacion</option>

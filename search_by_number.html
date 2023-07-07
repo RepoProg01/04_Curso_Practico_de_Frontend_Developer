@@ -19,9 +19,12 @@
 <body>
     <section class="perfil">
         <div class="perfil_info" >
-            <img class="navContainer_logo" src="./assets/logos/logo_banner.svg" alt="logo">
+            <img class="perfil_logo" src="./assets/logos/logo_banner.svg" alt="logo">
         </div>
-        <a href="./index.html"><img src="./assets/logos/btn_exit_up.svg" alt="exit_ico"></a>
+        <div class="perfil_smallIcon">
+            <a  href="./menu.html"><img class="perfil_icon" src="./assets/logos/btn_home_up.svg" alt="exit_ico"></a>
+            <a  href="./index.html"><img class="perfil_icon" src="./assets/logos/btn_exit_up.svg" alt="exit_ico"></a>
+        </div>
     </section>
 
     <section class="container">
@@ -33,7 +36,7 @@
                 
                 <div class="container_row container_row-searchByNum">
                     <label class="container_label container_label-searchByNum" for="number">Numero</label>
-                    <input name="f_number" class="container_input container_input-searchByNum" id="number" type="number" placeholder="" required>
+                    <input name="f_number" class="container_input container_input-searchByNum" id="number" type="number" placeholder="" >
                 </div>
 
                 <input class="primary_btn" type="submit" value="Buscar">
